@@ -1,0 +1,20 @@
+﻿
+@model GetCustomerByIdQueryResult
+@{
+    ViewData["Title"] = "UpdateCustomer";
+}
+
+<h1>Müşteri Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="CustomerId" class="form-control" />
+
+    <label>Müşteri Adı ve Soyadı</label>
+    <input type="text" asp-for="NameSurname" class="form-control" />
+    <br />
+    <label>Müşteri Emaili</label>
+    <input type="email" asp-for="Email" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Güncelle</button>
+</form>
+
